@@ -8,8 +8,10 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export default defineConfig(() => {
+
   return {
     plugins: [react(), tailwindcss()],
+    base:'/masaraddi/',
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
